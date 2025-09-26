@@ -1,7 +1,3 @@
-
-import { Card, CardContent } from '../components/ui/card'
-import { Button } from '../components/ui/button'
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black flex flex-col items-center">
@@ -12,14 +8,26 @@ export default function Home() {
       <section className="flex flex-col items-center text-center py-16 px-4 max-w-3xl">
         <h1 className="text-3xl font-bold mb-4">Estudio Jurídico Hernán Del Castillo</h1>
         <p className="text-lg mb-6">Asesoría y defensa legal en Derecho Penal, Procesal Penal, Derecho Administrativo y Contrataciones con el Estado.</p>
-        <a href="#contacto"><Button>Agenda una consulta</Button></a>
+        <a href="#contacto" className="bg-black text-white px-4 py-2 rounded-lg">Agenda una consulta</a>
       </section>
 
       <section id="servicios" className="grid gap-6 md:grid-cols-2 max-w-4xl px-4 py-12 w-full">
-        <div className="p-4"><Card><CardContent><h2 className="text-xl font-semibold mb-2">Derecho Penal</h2><p>Defensa en procesos penales, denuncias y asesoría integral en materia penal.</p></CardContent></Card></div>
-        <div className="p-4"><Card><CardContent><h2 className="text-xl font-semibold mb-2">Procesal Penal</h2><p>Patrocinio en procesos penales, estrategias procesales y acompañamiento en juicios.</p></CardContent></Card></div>
-        <div className="p-4"><Card><CardContent><h2 className="text-xl font-semibold mb-2">Derecho Administrativo</h2><p>Asesoría y defensa en procedimientos administrativos y recursos impugnativos.</p></CardContent></Card></div>
-        <div className="p-4"><Card><CardContent><h2 className="text-xl font-semibold mb-2">Contrataciones Públicas</h2><p>Consultoría y defensa en procesos de contratación con el Estado (OSCE).</p></CardContent></Card></div>
+        <div className="p-4 border rounded-lg shadow">
+          <h2 className="text-xl font-semibold mb-2">Derecho Penal</h2>
+          <p>Defensa en procesos penales, denuncias y asesoría integral en materia penal.</p>
+        </div>
+        <div className="p-4 border rounded-lg shadow">
+          <h2 className="text-xl font-semibold mb-2">Procesal Penal</h2>
+          <p>Patrocinio en procesos penales, estrategias procesales y acompañamiento en juicios.</p>
+        </div>
+        <div className="p-4 border rounded-lg shadow">
+          <h2 className="text-xl font-semibold mb-2">Derecho Administrativo</h2>
+          <p>Asesoría y defensa en procedimientos administrativos y recursos impugnativos.</p>
+        </div>
+        <div className="p-4 border rounded-lg shadow">
+          <h2 className="text-xl font-semibold mb-2">Contrataciones Públicas</h2>
+          <p>Consultoría y defensa en procesos de contratación con el Estado (OSCE).</p>
+        </div>
       </section>
 
       <section id="sobre-mi" className="max-w-3xl px-4 py-12 text-center">
@@ -31,7 +39,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Contacto</h2>
         <p className="mb-2">Email: abogadohernandelcastillo@gmail.com</p>
         <p className="mb-4">WhatsApp: +51 999 999 999</p>
-        <a href="mailto:abogadohernandelcastillo@gmail.com"><Button>Escríbeme</Button></a>
+        <a href="mailto:abogadohernandelcastillo@gmail.com" className="bg-white text-black px-4 py-2 rounded-lg">Escríbeme</a>
       </section>
 
       <footer className="w-full border-t p-4 text-center text-sm">
